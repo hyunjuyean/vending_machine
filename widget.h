@@ -14,6 +14,28 @@ class Widget : public QWidget
 public:
     explicit Widget(QWidget *parent = nullptr);
     ~Widget();
+    void resetMoney();
+    void changeMoney(int n);
+    void checkMoney();
+    void reset_message();
+    int money {0};
+
+private slots:
+    void on_pb10_clicked();
+
+    void on_pb50_clicked();
+
+    void on_pb100_clicked();
+
+    void on_pb500_clicked();
+
+    void on_pbCoffee_clicked();
+
+    void on_pbTea_clicked();
+
+    void on_pbCoke_clicked();
+
+    void on_pbreset_clicked();
 
 private:
     Ui::Widget *ui;
